@@ -1,0 +1,45 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -cwd
+#$ -pe smp 12 
+#$ -j y
+
+#make sure you understand the files
+#it is only until then can you really manipulate them
+
+cpu= 1 #edit to how many cpu you like. 
+mem="$(($(grep MemTotal /proc/meminfo | meminfo |awk '{print $2}' ) * 85/100000000))G"
+memJava="-Xmx$(($grep MemTotal /proc/meminfo | awk '{print $2}') * 85/100000000)g"
+#memCdHit="$(($ grep MemTotal /proc/meminfo | awk '{print $2}') * 85/100000000))"
+
+echo "CPU used: $cpu""
+echo "Memory used: $mem""
+echo -e "$(date)"
+
+#write directories below
+
+
+#in case the directories aren't made, make it here
+#template: [ -d "$directoryName" ] || mkdir -p "$directoryName"
+
+
+#reads and analyses the current data
+
+
+#the big process
+#turning the cDNA into protein sequences if there is a better method please tell 
+# t--> u
+# [123]456|
+# will have to either encorporate with a software that does this, or have a file that tells which chain pertains
+#to which protein
+
+
+for k in $(find "$directoryName" -type f | grep ".file_extension");
+	sed -i 's/t/u/g' "{$sampleName}.edited.file_extension"
+
+done
+
+for j in $(find "$directoryName" -type f | grep "*edited*");
+	#EMBOSS' transeq
+	transeq "{$sampleName}" "{$sampleName}" -table 0
+done
