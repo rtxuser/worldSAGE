@@ -1,0 +1,4 @@
+worldSAGE changelog
+
+v0.0 - created a framework for the entire code
+v0.1 - did more work, changed some things
