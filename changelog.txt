@@ -3,4 +3,6 @@ worldSAGE changelog
 v0.0 - created a framework for the entire code
 v0.1 - did more work, changed some things
 v0.2 - changed to .sh file, edited out the aa protein analysis. Working on a better method. 
-Uploaded a python file to use for aa analysis
+       Uploaded a python file to use for aa analysis
+       deleted v0.0 and v0.1
+v0.3 - made it so that the python file was executable in the shell file
