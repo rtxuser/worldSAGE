@@ -1,4 +1,4 @@
-# worldSAGE 2017
+# worldSAGE v 0.3
     Using high throughput cDNA data and manipulating it so that it can be analysed. This project will be opensource.  
 
 
