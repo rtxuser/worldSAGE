@@ -3,7 +3,7 @@
 
 
 The main goal of this project is to be of use to people, as there is a low quantity of opensource cDNA to merged aa sequence analysis. 
-WorldSAGE is different from the regular SAGE techniques as it is done from a computer. The process in which normal SAGE processes have too much room for error, thus worldSAGE was created. Uses Opensource software such as EMBOSS' transeq and Mothur's merge tool. 
+WorldSAGE is different from the regular SAGE techniques as it is all done from a computer. The best way on using worldSAGE would be to use in conjunction with dedicated memory and speed. Unlike regular SAGE processes, this version does not use tags-- using the whole sequence data as a tag will greatly improve the accuracy. Normal SAGE processes have too much room for error, thus worldSAGE was created to prevent such a thing from happening. Uses Opensource software such as EMBOSS' transeq and Mothur's merge tool. 
 
 If you use this in your work, please don't forget to cite me. 
 
