@@ -15,3 +15,6 @@ for record in SeqIO.parse(handle, "fasta"):
    #print X.flexibility() 
    #print X.isoelectric_point() 
    #print X.secondary_structure_fraction()
+    
+   
+sys.exit()
