@@ -59,3 +59,5 @@ done
 	#grep char -o "{$sampleName}" | -1 > "{$sampleName}".analysis.txt
 #done
 		
+python /path_to_worldSAGE/p_analysis.py 
+python p_analysis.py
